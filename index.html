@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NiteCom Software Dev & AI</title>
-    <link href="templatemo-personal-style.css" rel="stylesheet">
+    <link href="./css/templatemo-personal-style.css" rel="stylesheet">        
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="https://scontent.fprn2-1.fna.fbcdn.net/v/t39.30808-6/535111062_1224697856340142_8134596279792845255_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=SDjTlbCXY8AQ7kNvwHt3OcW&_nc_oc=AdnfUSaWCb7BwPnTyoxyd1VoDO7Yj896c-IHHkii_mC0un5iSDtsBwiJSVeoi9V2Hpg&_nc_zt=23&_nc_ht=scontent.fprn2-1.fna&_nc_gid=7J1jUYUjGXNNGuHNaE8VtA&oh=00_AfXRsqSkLzfwmeyNXUmqluGZIgQGC_sapR0U3lsrZmlheA&oe=68B100A1">
 
+<style>
+    section#ai-chat-section{
+      display:flex;
+      justify-content:center;
+      padding:40px 20px;
+    }
+    .chat-frame{
+      width:min(1100px,95%);
+      background:#fff;
+      border-radius:16px;
+      border:1px solid #e2e8f0;
+      box-shadow:0 10px 30px rgba(16,24,40,.12), 0 2px 6px rgba(16,24,40,.06);
+      overflow:hidden;
+    }
+    .topbar{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:12px 16px;
+      border-bottom:1px solid #e2e8f0;
+      background:#fbfbff;
+      font-weight:600;
+    }
+    iframe{
+      width:100%;
+      height:600px; /* ose sa të duash */
+      border:0;
+      display:block;
+    }
+      .photo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 0;
+    }
 
+    .photo-container {
+      height: 500px;
+      overflow: hidden;
+      border-radius: 12px; /* qoshe të rrumbullakosura */
+      background-color: #fff;
+      border: 1px solid rebeccapurple;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* bën që fotoja të përshtatet */
+      display: block;
+    }
+</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,8 +68,10 @@
             <div class="logo">NiteCom</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#ai-chat-section">Chat AI</a></li>
+                <li><a href="#photo-section">AI Automation</a></li>
+                <li><a href="#work">Service</a></li>
+                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -27,14 +81,15 @@
             </div>
         </div>
     </nav>
-
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul class="mobile-nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ai-chat-section">Chat AI</a></li>
+                <li><a href="#photo-section">AI Automation</a></li>
+                <li><a href="#work">Service</a></li>
+                 <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -57,31 +112,29 @@
         <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title fade-in">About Us</h2>
-            <div class="about-content">
-                <div class="about-image slide-in-left"></div>
-                <div class="about-text slide-in-right">
-                    <h3>Smart software - Elegant design  AI solutions</h3>
-                    <p><strong>Website & Web App Development</strong> - We develop and design customized websites and web applications, optimized for performance and professional insights. </p>
-                    <p><strong>AI Automation</strong> - Implemented with automated solutions that save time and increase efficiency, including artificial intelligence. </p>
-                    <p><strong>AI Analysis</strong> - Delivering analytics to see the same mindset and drive smart decision-making. </p>
-                     <p><strong>Social Media Design</strong> - We create creative and engaging designs for social media that reinforce your brand’s visual identity. </p>
-                     <p><strong>Video Reels & Ads</strong> -  Producing short, professional videos for advertising, promoting, and showcasing digital content. </p>
+                <h3 class="section-title fade-in">Our AI is smarter than you ever imagined.</h3>
 
-                    <div class="skills">
-                        <span class="skill-tag">Website & Web App Development</span>
-                        <span class="skill-tag">AI Automation</span>
-                        <span class="skill-tag">AI Analysis</span>
-                        <span class="skill-tag">Social Media Design</span>
-                        <span class="skill-tag">Video Reels & Ads</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <section class="photo-section" id="photo-section">
+    <div class="photo-container">
+                    <h3 style="font-size: 24px; margin: 0 auto; text-align: center; color: rgb(168, 168, 168);" >Connect any ideas with Nite AI Agents</h3>
+
+      <img src="https://dl.dropboxusercontent.com/scl/fi/rblgsa0ftf5bmld693c4l/aiAutomation.png?rlkey=oo6vcb691ojqf4jh5ey7bti88&st=css36c7m&dl=0" alt="Foto demo">
+    </div>
+  </section>
+                    <h3 id="ai-chat-section" style="font-size: 24px; margin: 0 auto; text-align: center; color: rgb(129, 49, 167);" class="bi bi-chat-text-fill">  ChatNite AI</h3> 
+
+
+  <section id="ai-chat-section">
+    <div class="chat-frame">
+      <div class="topbar">
+        <span>Chat AI</span>
+      </div>
+      <iframe 
+        src="https://chat.cxgenie.ai?aid=c351955c-4739-42af-8d18-705b58d81a0a&lang=en"
+        allow="microphone; camera; clipboard-read; clipboard-write; autoplay; fullscreen">
+      </iframe>
+    </div>
+  </section>
 
     <!-- Portfolio Section -->
     <section id="work" class="portfolio">
@@ -169,6 +222,31 @@
             </div>
         </div>
     </section>
+  <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About NiteCom</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left"></div>
+                <div class="about-text slide-in-right">
+                    <h3>Smart software - Elegant design  AI solutions</h3>
+                    <p><strong>Website & Web App Development</strong> - We develop and design customized websites and web applications, optimized for performance and professional insights. </p>
+                    <p><strong>AI Automation</strong> - Implemented with automated solutions that save time and increase efficiency, including artificial intelligence. </p>
+                    <p><strong>AI Analysis</strong> - Delivering analytics to see the same mindset and drive smart decision-making. </p>
+                     <p><strong>Social Media Design</strong> - We create creative and engaging designs for social media that reinforce your brand’s visual identity. </p>
+                     <p><strong>Video Reels & Ads</strong> -  Producing short, professional videos for advertising, promoting, and showcasing digital content. </p>
+
+                    <div class="skills">
+                        <span class="skill-tag">Website & Web App Development</span>
+                        <span class="skill-tag">AI Automation</span>
+                        <span class="skill-tag">AI Analysis</span>
+                        <span class="skill-tag">Social Media Design</span>
+                        <span class="skill-tag">Video Reels & Ads</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -226,7 +304,7 @@
         </div>
     </footer>
 
-<script src="templatemo-personal-javascripts.js"></script>
+<script src="./js/templatemo-personal-javascripts.js"></script>
 
 </body>
 </html>
